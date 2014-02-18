@@ -3,8 +3,8 @@ from gamepads.SNESGamepad import SNESGamepad
 #from gamepads.GBAGamepad import GBAGamepad
 #from commandSelectors.BasicCommandSelector import BasicCommandSelector
 from commandSelectors.CommandVotingSelector import CommandVotingSelector
-from chatClients.CommandLineClient import CommandLineClient
-#from chatClients.IRCClient import IRCClient
+#from chatClients.CommandLineClient import CommandLineClient
+from chatClients.IRCClient import IRCClient
 
 IRC_HOST = "127.0.0.1"
 IRC_PORT = 6667

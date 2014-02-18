@@ -6,7 +6,7 @@ VENDOR_DEFAULT = 0
 PRODUCT_DEFAULT = 0
 VERSION_DEFAULT = 0
 
-CLICK_PADDING = 0.1
+CLICK_PADDING = 0.3
 
 class BaseGamePad(object):
     commandMapping = {}
