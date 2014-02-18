@@ -19,8 +19,8 @@
 from gamepads.SNESGamepad import SNESGamepad
 #from gamepads.GBAGamepad import GBAGamepad
 #from gamepads.PS1Gamepad import PS1Gamepad
-#from commandSelectors.BasicCommandSelector import BasicCommandSelector
-from commandSelectors.CommandVotingSelector import CommandVotingSelector
+from commandSelectors.BasicCommandSelector import BasicCommandSelector
+#from commandSelectors.CommandVotingSelector import CommandVotingSelector
 from chatClients.CommandLineClient import CommandLineClient
 #from chatClients.IRCClient import IRCClient
 

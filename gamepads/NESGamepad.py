@@ -35,7 +35,11 @@ class NESGamepad(BaseGamePad):
         "left" : CLICK_LEFT_BUTTON,
         "right" : CLICK_RIGHT_BUTTON,
         "up" : CLICK_UP_BUTTON,
-        "down" : CLICK_DOWN_BUTTON
+        "down" : CLICK_DOWN_BUTTON,
+        "l" : CLICK_LEFT_BUTTON,
+        "r" : CLICK_RIGHT_BUTTON,
+        "u" : CLICK_UP_BUTTON,
+        "d" : CLICK_DOWN_BUTTON
     }
 
     events = (uinput.BTN_A, uinput.BTN_B, uinput.BTN_START, uinput.BTN_SELECT,
