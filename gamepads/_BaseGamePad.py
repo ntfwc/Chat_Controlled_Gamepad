@@ -6,6 +6,8 @@ VENDOR_DEFAULT = 0
 PRODUCT_DEFAULT = 0
 VERSION_DEFAULT = 0
 
+CLICK_PADDING = 0.1
+
 class BaseGamePad(object):
     commandMapping = {}
     events = ()
@@ -26,9 +28,9 @@ class BaseGamePad(object):
 
     def _clickButton(self, button):
         self.device.emit(button, 1)
-        time.sleep(0.1)
+        time.sleep(CLICK_PADDING)
         self.device.emit(button, 0)
-        time.sleep(0.1)
+        time.sleep(CLICK_PADDING)
 
     def runCommand(self, command):
         raise NotImplementedError()
