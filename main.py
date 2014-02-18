@@ -18,6 +18,7 @@
 #from gamepads.NESGamepad import NESGamepad
 from gamepads.SNESGamepad import SNESGamepad
 #from gamepads.GBAGamepad import GBAGamepad
+#from gamepads.PS1Gamepad import PS1Gamepad
 #from commandSelectors.BasicCommandSelector import BasicCommandSelector
 from commandSelectors.CommandVotingSelector import CommandVotingSelector
 #from chatClients.CommandLineClient import CommandLineClient
@@ -35,6 +36,7 @@ def main():
     #gamepad = NESGamepad()
     gamepad = SNESGamepad()
     #gamepad = GBAGamepad()
+    #gamepad = PS1Gamepad()
     #commandSelector = BasicCommandSelector(gamepad)
     commandSelector = CommandVotingSelector(gamepad, INPUT_COLLECTION_TIME)
     #chatClient = CommandLineClient(commandSelector)
