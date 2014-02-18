@@ -26,8 +26,7 @@ For now, you alter the python code directly to configure it.
 main.py should contain basically everything you need. Just a few alterations there and you should be good to go.
 
 Note:
-Programs can have trouble picking up button clicks if the time between press and release is too short. So if you are
-having trouble getting an emulator to pick up clicks from a virtual gamepad, go to gamepads/_BaseGamePad.py and try adjusting the CLICK_PADDING time.
+Programs can have trouble picking up button clicks if the time between press and release is too short. So if you are having trouble getting a program, especially a configuration dialog, to pick up clicks from a virtual gamepad, go to gamepads/_BaseGamePad.py and try adjusting the CLICK_PADDING time.
 
 Running
 ---------------------------
