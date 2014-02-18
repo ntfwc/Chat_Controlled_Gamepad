@@ -26,8 +26,9 @@ class BaseGamePad(object):
 
     def _clickButton(self, button):
         self.device.emit(button, 1)
-        time.sleep(0.25)
+        time.sleep(0.1)
         self.device.emit(button, 0)
+        time.sleep(0.1)
 
     def runCommand(self, command):
         raise NotImplementedError()
