@@ -23,7 +23,7 @@ The chat client and command selector are separated into different threads.
 Set-up
 --------------------------
 Make sure the user has proper permissions to access and write to the uinput device. This is not usually default.
-One quick hack, which I will say is probably not good security wise to do in a system being used by multiple people, is to simply give everyone read write access to the device with the command:
+One quick hack, which I will say is probably not good security wise to do in a system being used by multiple people, is to simply temporarily (it will be reverted on next boot up) give everyone read write access to the device with the command:
 sudo chmod a+rw /dev/uinput
 or, as root:
 chmod a+rw /dev/uinput
