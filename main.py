@@ -21,8 +21,8 @@ from gamepads.SNESGamepad import SNESGamepad
 #from gamepads.PS1Gamepad import PS1Gamepad
 #from commandSelectors.BasicCommandSelector import BasicCommandSelector
 from commandSelectors.CommandVotingSelector import CommandVotingSelector
-#from chatClients.CommandLineClient import CommandLineClient
-from chatClients.IRCClient import IRCClient
+from chatClients.CommandLineClient import CommandLineClient
+#from chatClients.IRCClient import IRCClient
 
 IRC_HOST = "127.0.0.1"
 IRC_PORT = 6667
@@ -39,8 +39,8 @@ def main():
     #gamepad = PS1Gamepad()
     #commandSelector = BasicCommandSelector(gamepad)
     commandSelector = CommandVotingSelector(gamepad, INPUT_COLLECTION_TIME)
-    #chatClient = CommandLineClient(commandSelector)
-    chatClient = IRCClient(commandSelector, IRC_HOST, IRC_PORT, IRC_NICKNAME, IRC_CHANNEL, IRC_PASSWORD)
+    chatClient = CommandLineClient(commandSelector)
+    #chatClient = IRCClient(commandSelector, IRC_HOST, IRC_PORT, IRC_NICKNAME, IRC_CHANNEL, IRC_PASSWORD)
     
     commandSelector.start()
     chatClient.run()
