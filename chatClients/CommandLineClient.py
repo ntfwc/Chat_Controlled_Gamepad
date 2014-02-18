@@ -21,4 +21,5 @@ class CommandLineClient(BaseChatClient):
     def mainLoop(self):
         while True:
             message = raw_input()
+            message = message.strip().lower()
             self.commandSelector.sendInput(message)
