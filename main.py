@@ -1,4 +1,5 @@
-from gamepads.NESGamepad import NESGamepad
+#from gamepads.NESGamepad import NESGamepad
+from gamepads.SNESGamepad import SNESGamepad
 #from commandSelectors.BasicCommandSelector import BasicCommandSelector
 from commandSelectors.CommandVotingSelector import CommandVotingSelector
 #from chatClients.CommandLineClient import CommandLineClient
@@ -12,7 +13,8 @@ IRC_CHANNEL = "blarg"
 INPUT_COLLECTION_TIME = 1.2
 
 def main():
-    gamepad = NESGamepad()
+    #gamepad = NESGamepad()
+    gamepad = SNESGamepad()
     #commandSelector = BasicCommandSelector(gamepad)
     commandSelector = CommandVotingSelector(gamepad, INPUT_COLLECTION_TIME)
     #chatClient = CommandLineClient(commandSelector)
